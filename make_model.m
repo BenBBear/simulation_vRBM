@@ -7,6 +7,7 @@ model.sigmoid = 'PLAN';
 model.critical = 0;
 model.iadder = 'ETAIIM';
 model.variance = 'undefined';
+model.iteration = 100;
 switch type
     case 'Ab'
         model.bitlength = 2:32;       
