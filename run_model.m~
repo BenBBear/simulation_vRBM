@@ -1,0 +1,21 @@
+function [ result ] = run_model( model, images, config )
+%RUN_MODEL Summary of this function goes here
+%   Detailed explanation goes here
+    result = {};
+    for b=config.bitlength
+       for i_s = 1:length(config.sigmoid) 
+            sg = config.sigmoid{i_s};
+            for i_a = 1:length(config.iadder)
+                iadder = config.iadder{i_a};
+                for n_critical = config.critical
+                    
+                end
+            end
+       end
+    end
+    
+    
+    %%% currently vari
+    
+end
+

@@ -1,0 +1,13 @@
+function prediction = makePrediction(bit, sigm, adder, n_critical, iteration, critical_scheme, model, images)
+    prediction = zero(1, 10);
+    switch critical_scheme
+        case 'random'
+            
+        otherwise
+            error('');
+    end
+    
+    for iter = 1:iteration
+        
+    end
+end

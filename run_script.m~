@@ -1,0 +1,26 @@
+image_num = 100;
+
+
+load('./data/model/mnist_data.mat')
+load('./data/model/model.mat')
+data.labels = testlabels(1:image_num);
+data.images = testdata(1:image_num);
+
+
+
+
+
+
+% A vs bitlength
+type = 'Ab'
+config_Ab = make_model('Ab');
+result = run_model(model, data.images, config);
+rate = evaluateResult(result, data.labels);
+reportRate(type, rate);
+
+% A vs sigmoid
+
+
+
+
+% 
